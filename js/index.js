@@ -88,7 +88,7 @@ const readme = ({username, email, title, description, license, installation, tes
 
         ## License
 
-        This project is licensed under the ${license}
+        This project is licensed under the ${license} license.
 
         ## Contributing
 
