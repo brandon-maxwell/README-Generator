@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const questions = 
+const questions =
     [
         {
             type: 'input',
@@ -33,11 +33,13 @@ const questions =
             type: 'input',
             name: 'installation',
             message: 'What command should be run to install dependencies?',
+            default: 'npm i'
         },
         {
             type: 'input',
             name: 'tests',
             message: 'What command should be run to run tests?',
+            default: 'npm test'
         },
         {
             type: 'input',
@@ -51,63 +53,61 @@ const questions =
         },
     ]
 
-const readme = ({username, email, title, description, license, installation, tests, usage, contributing}) => {
+const readme = ({ username, email, title, description, license, installation, tests, usage, contributing }) => {
     return `
-        # ${title}
-        ${license}
+# ${title}
+${license}
 
-        ## Description
+## Description
 
-        ${description}
+${description}
 
-        ## Table of Contents
+## Table of Contents
 
-        * [Intallation](#installation)
+* [Intallation](#installation)
 
-        * [Usage](#usage)
+* [Usage](#usage)
 
-        * [License](#license)
+* [License](#license)
 
-        * [Contributing](#contributing)
+* [Contributing](#contributing)
 
-        * [Tests](#tests)
+* [Tests](#tests)
 
-        * [Questions](#questions)
+* [Questions](#questions)
 
-        ## Installation
+## Installation
 
-        To install necessary dependencies, run the following command:
+To install necessary dependencies, run the following command:
 
-        ~~~
-        ${installation}
-        ~~~
+~~~
+${installation}
+~~~
 
-        ## Usage
+## Usage
 
-        ${usage}
+${usage}
 
-        ## License
+## License
 
-        This project is licensed under the ${license} license.
+This project is licensed under the ${license} license.
 
-        ## Contributing
+## Contributing
 
-        ${contributing}
+${contributing}
 
-        ## Tests
+## Tests
 
-        To run tests, run the following command:
+To run tests, run the following command:
 
-        ~~~
-        ${tests}
-        ~~~
+~~~
+${tests}
+~~~
 
-        ## Questions
+## Questions
 
-        If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at [${username}](https://github.com/${username}).
-
-
-    `
+If you have any questions about the repo, open an issue or contact me directly at ${email}. You can find more of my work at [${username}](https://github.com/${username}).
+`
 }
 
 inquirer
