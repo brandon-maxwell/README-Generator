@@ -4,12 +4,17 @@
 ## Description
 This project allows the user to generate a README.md file for your github repository.
 
+## Preview of Expected Results:
+![preview screenshot](./Images/README-Screenshot.png)
+
+## Tutorial
+[Click here to view a tutorial video on how to use the README Generator](https://youtu.be/okHgaF2qJDg)
+
 ## Table of Contents
 * [Intallation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
