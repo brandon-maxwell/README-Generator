@@ -27,11 +27,5 @@ This project is licensed under the [The Unlicense](http://unlicense.org/) licens
 ## Contributing
 When contributing to this repository, Fork the repo on GitHub, Clone the project to your machine, Commit changes to your own branch, Push your work back up to your fork, then Submit a pull request so your changes can be reviewed.
 
-## Tests
-To run tests, run the following command:
-~~~
-npm test
-~~~
-
 ## Questions
 If you have any questions about the repo, open an issue or contact me directly at brandon.l.maxwell@gmail.com. You can find more of my work at [brandon-maxwell](https://github.com/brandon-maxwell).
